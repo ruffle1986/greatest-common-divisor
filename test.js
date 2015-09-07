@@ -1,5 +1,5 @@
 import test from 'ava'
-import gcd from '.'
+import gcd from './index'
 
 test('find the greatest common divisor', t => {
   t.is(gcd(36, 27, 45, 81), 9)
