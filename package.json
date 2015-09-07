@@ -1,0 +1,41 @@
+{
+  "name": "greatest-common-divisor",
+  "version": "1.0.0",
+  "description": "Computes the greatest common divisor",
+  "repository": "ruffle1986/greatest-common-divisor",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "xo !dist",
+    "posttest": "npm run testonly",
+    "testonly": "ava",
+    "start": "node -r babel/register index.js",
+    "cover": "istanbul cover ./node_modules/.bin/ava test.js",
+    "build": "babel index.js -d dist/",
+    "prepublish": "npm test && npm run build"
+  },
+  "author": "ruffle1986",
+  "license": "MIT",
+  "keywords": [
+    "greatest",
+    "highest",
+    "common",
+    "factor",
+    "divisor",
+    "measure",
+    "mathematics"
+  ],
+  "devDependencies": {
+    "ava": "git://github.com/sindresorhus/ava",
+    "babel": "^5.8.23",
+    "istanbul": "^0.3.19",
+    "xo": "^0.8.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "envs": [
+      "node"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+coverage
+node_modules
+.gitignore
+.npmignore
+index.js
+!dist/index.js
+test.js
