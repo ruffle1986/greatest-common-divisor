@@ -14,7 +14,7 @@ $ npm i -g greatest-common-divisor
 ```js
 import gcd from 'greatest-common-divisor'
 
-gdc(12, 18) // 6
+gcd(12, 18) // 6
 
 ```
 
