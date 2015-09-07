@@ -9,7 +9,8 @@
     "posttest": "npm run testonly",
     "testonly": "ava",
     "start": "node -r babel/register index.js",
-    "cover": "istanbul cover ./node_modules/.bin/ava test.js",
+    "cover": "istanbul cover $(npm bin)/ava test.js",
+    "coveralls": "npm run cover && cat ./coverage/lcov.info | $(npm bin)/coveralls",
     "build": "babel index.js -d dist/",
     "prepublish": "npm test && npm run build"
   },
@@ -27,6 +28,7 @@
   "devDependencies": {
     "ava": "git://github.com/sindresorhus/ava",
     "babel": "^5.8.23",
+    "coveralls": "^2.11.4",
     "istanbul": "^0.3.19",
     "xo": "^0.8.0"
   },
