@@ -19,6 +19,10 @@ gcd(12, 18) // 6
 
 ```
 
+## Related
+
+[least-common-multiple](https://github.com/ruffle1986/least-common-multiple)
+
 ## License
 
 [MIT](LICENSE)
